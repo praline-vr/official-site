@@ -1,5 +1,15 @@
 import { Options } from "$fresh/plugins/twind.ts";
 
-export default {
+const twConfig: Options = {
   selfURL: import.meta.url,
-} as Options;
+  preflight: {
+    "@import":
+      "url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap')",
+    html: {
+      scrollBehavior: "smooth",
+      fontFamily: "'Noto Sans JP', sans-serif",
+    },
+  },
+};
+
+export default twConfig;
