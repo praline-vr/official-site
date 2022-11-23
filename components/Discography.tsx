@@ -27,7 +27,9 @@ const Discography = () => {
                 <a href="https://pra-line.booth.pm/items/3890560">
                   <img src="/icon-booth-300x300.png" class="inline w-16" />
                 </a>
-                <h3 class="font-extrabold text-lg pb-12 pt-2">BOOTH</h3>
+                <h3 class="font-extrabold text-lg pb-12 pt-2 md:hidden">
+                  BOOTH
+                </h3>
               </div>
             </div>
             <div class="hidden md:(block px-12 m-auto w-full)">

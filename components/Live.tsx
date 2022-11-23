@@ -73,7 +73,7 @@ const Live = () => {
         <div class="text-center md:(absolute top-1/2 -translate-y-1/2 w-full)">
           <h1
             class="font-bold text-4xl vh-center aspect-video bg(cover center bg_blue)
-            md:(p-8 aspect-auto bg-none)"
+            md:(p-4 aspect-auto bg-none)"
           >
             LIVE HISTORY
           </h1>

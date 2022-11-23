@@ -42,26 +42,26 @@ const Profile = () => {
         <div class="text-center md:(absolute top-1/2 -translate-y-1/2 w-full)">
           <h1
             class="font-bold text-4xl vh-center aspect-video bg(cover center bg_orange)
-            md:(p-8 aspect-auto h-auto bg-none)"
+            md:(p-2 aspect-auto h-auto bg-none)"
           >
             PROFILE
           </h1>
           <div class="md:(flex text-left)">
             {profiles.map((profile) => (
-              <div class="mx-8 my-12 md:(mx-12 w-full)">
+              <div class="mx-8 my-3 md:(mx-12 w-full)">
                 <div class="flex mb-4 md:(block mb-0)">
                   <img
                     src={profile.pic}
-                    class="w-1/2 rounded-[50px] ml-8 md:(w-full m-0 mb-16)"
+                    class="w-1/2 rounded-[50px] ml-8 md:(w-full px-4 my-0 mx-auto)"
                   />
-                  <h2 class="w-1/2 font-bold vh-center text-2xl md:(w-full text-base block)">
+                  <h2 class="w-1/2 font-bold vh-center text-2xl md:(mt-6 w-full text-base block)">
                     {profile.name}
                     <span class="hidden md:inline">.</span>
                   </h2>
                 </div>
                 <div class="flex md:block">
                   <p class="w-3/4 md:w-full">{profile.detail}</p>
-                  <div class="w-1/4 vh-center md:(mt-8)">
+                  <div class="w-1/4 vh-center md:(mt-4 block w-auto)">
                     <a href={profile.twitter}>
                       <img
                         src="/icon-twitter-300x300.png"
