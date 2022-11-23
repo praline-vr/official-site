@@ -11,12 +11,12 @@ const Goods = () => {
           </h1>
           <div class="md:(flex px-16)">
             <div class="my-auto text-left w-full">
-              <div class="flex p-4 md:hidden">
-                <img src="/item-mug.jpg" class="w-1/3 p-3" />
-                <img src="/item-mug.jpg" class="w-1/3 p-3" />
-                <img src="/item-mug.jpg" class="w-1/3 p-3" />
+              <div class="flex m-4 md:hidden">
+                <img src="/item-mug.png" class="w-1/3 p-8" />
+                <img src="/item-tumbler.png" class="w-1/3 p-8" />
+                <img src="/item-badge.png" class="w-1/3 p-8" />
               </div>
-              <p class="mx-3 leading-10 md:(my-10 font-bold)">
+              <p class="mx-4 leading-10 md:(my-10 font-bold)">
                 オンラインショップ SUZURI にて PRA-LiNĒ の
                 グッズが買えるよ！！！！！
                 <br />
@@ -24,7 +24,7 @@ const Goods = () => {
                 <br />
                 ステッカーと缶バッジもお手ごろ価格で販売中！
               </p>
-              <div class="text-center my-10 md:text-right">
+              <div class="text-center mt-4 mb-12 md:text-right">
                 <a href="https://suzuri.jp/PRA-LiNE">
                   <img src="/icon-suzuri-300x300.png" class="inline w-16" />
                 </a>
@@ -32,7 +32,7 @@ const Goods = () => {
             </div>
             <div class="hidden md:(block mx-12 m-auto w-full)">
               <a href="https://suzuri.jp/PRA-LiNE">
-                <img src="/item-mug.jpg" class="w-3/4 mx-auto" />
+                <img src="/item-tumbler.png" class="pl-[20%] w-2/3 mx-auto" />
               </a>
             </div>
           </div>
