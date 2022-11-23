@@ -9,6 +9,7 @@ const twConfig: Options = {
     html: {
       scrollBehavior: "smooth",
       fontFamily: "'Noto Sans JP', sans-serif",
+      color: "#3f3f46",
     },
   },
   theme: {
