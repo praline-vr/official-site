@@ -52,7 +52,7 @@ const Header = () => {
           >
             <div class="text-center py-2 md:(ml-8 mr-auto)">
               <a href="#top">
-                <img class="w-24 inline" src="/logo.png" style={dropShadow} />
+                <img class="inline" src="/logo-small.png" style={dropShadow} />
               </a>
             </div>
             <div class="absolute right-8 top-8 md:hidden">
@@ -64,7 +64,7 @@ const Header = () => {
             <div
               class={`${
                 !isOpen && "hidden"
-              } my-auto text-center md:(flex bg-menu-gradient rounded-full px-6 border(1 white))`}
+              } my-auto text-center md:(flex bg-menu-gradient rounded-full px-6 border(1 white) mx-8)`}
             >
               {nav.map((nav) => (
                 <li
