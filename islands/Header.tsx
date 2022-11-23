@@ -3,15 +3,21 @@ import { useState } from "preact/hooks";
 
 interface Props {
   onClick: () => void;
+  open: boolean;
   bgClass: string;
 }
 
-const HamburgerButton: FunctionComponent<Props> = ({ onClick, bgClass }) => {
+const HamburgerButton: FunctionComponent<Props> = ({
+  onClick,
+  open,
+  bgClass,
+}) => {
+  const cls = "block w-8 h-0.5 bg-gray-100 transition ";
   return (
     <div onClick={onClick} class={`p-4 space-y-2 rounded-2xl ${bgClass}`}>
-      <span class="block w-8 h-0.5 bg-gray-100"></span>
-      <span class="block w-8 h-0.5 bg-gray-100"></span>
-      <span class="block w-8 h-0.5 bg-gray-100"></span>
+      <span class={cls + (open && "rotate-45 translate-y-[10px]")}></span>
+      <span class={cls + (open && "opacity-0")}></span>
+      <span class={cls + (open && "-rotate-45 -translate-y-[10px]")}></span>
     </div>
   );
 };
@@ -58,13 +64,14 @@ const Header = () => {
             <div class="absolute right-8 top-8 md:hidden">
               <HamburgerButton
                 onClick={toggle}
+                open={isOpen}
                 bgClass={isOpen ? "" : "bg-menu-gradient shadow"}
               />
             </div>
             <div
               class={`${
                 !isOpen && "hidden"
-              } my-auto text-center md:(flex bg-menu-gradient rounded-full px-6 border(1 white) mx-8)`}
+              } transition my-auto text-center md:(flex bg-menu-gradient rounded-full px-6 border(1 white) mx-8)`}
             >
               {nav.map((nav) => (
                 <li
