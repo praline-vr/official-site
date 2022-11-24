@@ -5,10 +5,10 @@ const Top = () => {
     <div id="top" class="bg(cover center bg_top_rot md:bg_top)">
       <div class="mx-auto w-full md:max-w-6xl relative h-screen">
         <img
-          src="/senzai.png"
-          class="absolute top-1/2 -translate-y-1/2 mx-auto"
+          src="/praline-outline.png"
+          class="absolute top-1/2 -translate-y-1/2 mx-auto md:w-3/4"
         />
-        <div class="absolute top-3/4 -translate-y-3/4 w-full md:(top-1/2 -translate-y-1/2 w-auto right-[40px])">
+        <div class="absolute top-[80%] -translate-y-3/4 w-full md:(top-1/2 -translate-y-1/2 w-auto right-[40px])">
           <img src="/text-upper.png" class="mx-auto w-1/2 md:w-[60%]" />
           <img src="/logo.png" class="py-3 mx-auto w-1/2 md:w-[60%]" />
           <img src="/text-lower.png" class="mx-auto w-1/2 md:w-[60%]" />
