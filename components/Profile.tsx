@@ -10,6 +10,7 @@ const Profile = () => {
         "隙あらばサボろうとしているらしい。がぶがぶがぶりあす。",
       ].join(""),
       twitter: "https://twitter.com/lin_ll_vr",
+      youtube: "https://www.youtube.com/@lin_yozakura",
     },
     {
       name: "もものき もも",
@@ -22,6 +23,7 @@ const Profile = () => {
         "もちょもちょ。",
       ].join(""),
       twitter: "https://twitter.com/MoMoChannel9",
+      youtube: " https://www.youtube.com/channel/UC0a4aWLs363l33HLKSeSJ1g",
     },
     {
       name: "なかにゃん",
@@ -33,6 +35,7 @@ const Profile = () => {
         "たまにキーボードやギターも担当する。なかんにゃ。",
       ].join(""),
       twitter: "https://twitter.com/naca_nyan",
+      youtube: "https://www.youtube.com/@naca_nyan",
     },
   ];
 
@@ -61,11 +64,17 @@ const Profile = () => {
                 </div>
                 <div class="flex md:block">
                   <p class="w-3/4 md:w-full">{profile.detail}</p>
-                  <div class="w-1/4 vh-center md:(mt-4 block w-auto)">
+                  <div class="mx-auto md:(mt-4 w-auto)">
                     <a href={profile.twitter}>
                       <img
                         src="/icon-twitter-300x300.png"
-                        class="w-12 md:w-8"
+                        class="w-12 mb-2 md:(mb-0 mr-3 inline w-8)"
+                      />
+                    </a>
+                    <a href={profile.youtube}>
+                      <img
+                        src="/icon-youtube-300x300.png"
+                        class="w-12 md:(inline w-8)"
                       />
                     </a>
                   </div>

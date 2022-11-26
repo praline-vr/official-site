@@ -18,9 +18,6 @@ const Top = () => {
           <a href="https://twitter.com/praline_vr">
             <img src="icon-twitter-300x300.png" class="my-4 h-8 mx-auto" />
           </a>
-          <a href="https://youtube.com/@naca_nyan">
-            <img src="icon-youtube-300x300.png" class="my-4 h-8 mx-auto" />
-          </a>
           <a href="https://pra-line.booth.pm/">
             <img src="icon-booth-300x300.png" class="my-4 h-8 mx-auto" />
           </a>
