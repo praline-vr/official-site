@@ -17,6 +17,7 @@ export default function Home() {
     <>
       <Head>
         <title>{title}</title>
+        <link rel="icon" href="/logo-small.png" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
