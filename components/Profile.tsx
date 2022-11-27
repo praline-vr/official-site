@@ -23,7 +23,7 @@ const Profile = () => {
         "もちょもちょ。",
       ].join(""),
       twitter: "https://twitter.com/MoMoChannel9",
-      youtube: " https://www.youtube.com/channel/UC0a4aWLs363l33HLKSeSJ1g",
+      youtube: " https://www.youtube.com/@MochoNoki",
     },
     {
       name: "なかにゃん",
