@@ -3,3 +3,39 @@ html {
   font-family: "Noto Sans JP", sans-serif !important;
   color: #3f3f46;
 }
+
+.fadeout-earlier {
+  animation: fadeEarlier ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fadeout-later {
+  animation: fadeLater ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeEarlier {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLater {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}

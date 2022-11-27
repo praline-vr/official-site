@@ -6,6 +6,7 @@ import Live from "../components/Live.tsx";
 import Discography from "../components/Discography.tsx";
 import Goods from "../components/Goods.tsx";
 import Footer from "../components/Footer.tsx";
+import Loading from "../islands/Loading.tsx";
 
 const canonicalUrl = "https://praline.ml";
 const title = "PRA-LiNÉ Official";
@@ -26,6 +27,7 @@ export default function Home() {
         <meta name="twitter:site" content="@praline_vr" />
         <meta name="twitter:creator" content="@praline_vr" />
       </Head>
+      <Loading />
       <Header />
       <Top />
       <Profile />
