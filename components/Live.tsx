@@ -43,6 +43,7 @@ const Live = () => {
     },
     {
       name: "2022.05.14 不眠症女一周年ライブ「INSOMNIA GIRLS DESTRUCT YOU」出演",
+      href: "https://youtu.be/5tJx-mfIO58?t=853",
     },
     {
       name: "2022.07.22 VRLIVECAVE「ねこのおと」出演",
