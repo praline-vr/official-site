@@ -78,7 +78,7 @@ const Live = () => {
           >
             LIVE HISTORY
           </h1>
-          <ul class="px-4 py-6 text-left m-auto md:(w-3/4 py-0)">
+          <ul class="px-4 py-6 text-left m-auto md:(pl-8 w-3/4 py-0 h-[50vh] overflow-auto)">
             {lives.reverse().map((live) => (
               <li class="list-circle ml-4 py-2 md:(ml-0 py-0)">
                 {live.href ? (
