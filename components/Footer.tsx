@@ -24,9 +24,11 @@ const Footer = () => {
             <br />
             TwitterのDMまでお願い申し上げます。
           </p>
-          <a href="https://twitter.com/praline_vr">
-            <img src="/icon-twitter-300x300.png" class="mx-auto my-6 w-16" />
-          </a>
+          <div class="mx-auto my-6">
+            <a href="https://twitter.com/praline_vr">
+              <img src="/icon-twitter-300x300.png" class="inline w-16" />
+            </a>
+          </div>
           <p class="text(sm white) pb-8 pt-[22rem] md:pt-[8rem]">
             &copy; PRA-LiNÉ
           </p>
