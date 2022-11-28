@@ -79,7 +79,7 @@ const Live = () => {
             LIVE HISTORY
           </h1>
           <ul class="px-4 py-6 text-left m-auto md:(w-3/4 py-0)">
-            {lives.map((live) => (
+            {lives.reverse().map((live) => (
               <li class="list-circle ml-4 py-2 md:(ml-0 py-0)">
                 {live.href ? (
                   <a href={live.href} class="underline text-blue-400">
