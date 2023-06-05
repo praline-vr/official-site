@@ -67,6 +67,10 @@ const Live = () => {
       name: "2022.11.11 約束カフェ＆バー 約束さん誕生日ライブ（音声のみ）",
       href: "https://youtu.be/XS7zSmWvcJU",
     },
+    {
+      name: "2022.05.13 不眠症女ツアー「RAMPANT FUME TOUR 2023」 at Livehouse Confiserie",
+      href: "https://youtu.be//UsnxKOU50h0",
+    },
   ];
   return (
     <div id="live" class="md:min-h-screen md:bg(cover center bg_blue)">
