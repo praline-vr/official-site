@@ -8,7 +8,7 @@ import Goods from "../components/Goods.tsx";
 import Footer from "../components/Footer.tsx";
 import Loading from "../islands/Loading.tsx";
 
-const canonicalUrl = "https://praline.ml";
+const canonicalUrl = "https://praline.cf";
 const title = "PRA-LiNÉ Official";
 const description =
   "VRアイドルスリーピースバンド PRA-LiNÉ(ぷらりね) の公式サイトだよ！";
