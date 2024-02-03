@@ -19,7 +19,7 @@ const twConfig: Options = {
         bg_blue: "url('/bg-blue.png')",
         bg_purple: "url('/bg-purple.png')",
         bg_praline: "url('/praline.png')",
-        bg_praline_silhouette: "url('/praline-silhouette.png')",
+        bg_praline_sd: "url('/praline-sd.png')",
       },
     },
   },

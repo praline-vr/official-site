@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      class="bg-gray-900 bg(bg_praline_silhouette no-repeat)"
+      class="bg-gray-900 bg(bg_praline_sd no-repeat)"
       style={{
         backgroundPosition: "bottom 18% right 18%",
         backgroundSize: "430px",
