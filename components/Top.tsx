@@ -5,7 +5,7 @@ const Top = () => {
     <div id="top" class="bg(cover center bg_top_rot md:bg_top)">
       <div class="mx-auto w-full md:max-w-6xl relative h-screen">
         <img
-          src="/praline-outline.png"
+          src="/praline-trim.png"
           class="absolute top-1/2 -translate-y-1/2 mx-auto md:w-3/4"
         />
         <div class="absolute top-[80%] -translate-y-3/4 w-full md:(top-1/2 -translate-y-1/2 w-auto right-[40px])">

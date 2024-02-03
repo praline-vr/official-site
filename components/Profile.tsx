@@ -55,7 +55,7 @@ const Profile = () => {
                 <div class="flex mb-4 md:(block mb-0)">
                   <img
                     src={profile.pic}
-                    class="w-1/2 rounded-[50px] ml-8 md:(w-full px-4 my-0 mx-auto)"
+                    class="w-1/2 rounded-[36px] ml-8 md:(w-full my-0 mx-auto)"
                   />
                   <h2 class="w-1/2 font-bold vh-center text-2xl md:(mt-6 w-full text-base block)">
                     {profile.name}
