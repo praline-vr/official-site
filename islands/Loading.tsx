@@ -1,11 +1,11 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 import { FunctionComponent } from "preact";
 
 const Loading: FunctionComponent = () => {
   const [loading, setLoading] = useState(true);
   const [animPlaying, setAnimPlaying] = useState(true);
 
-  window.onload = () => {
+  const hideLoading = () => {
     setLoading(false);
     const divLoading = document.querySelector("#loading");
     if (divLoading instanceof HTMLDivElement) {
@@ -14,6 +14,12 @@ const Loading: FunctionComponent = () => {
       });
     }
   };
+
+  useEffect(() => {
+    const loaded = document.readyState === "complete";
+    if (loaded) hideLoading();
+    else window.onload = hideLoading;
+  }, []);
 
   const loadingClasses = [
     "w-screen h-screen bg-white fixed z-50",
