@@ -54,9 +54,9 @@ const Header = () => {
       <div class="mx-auto fixed w-full z-10">
         <header class="mx-auto max-w-6xl">
           <div
-            class={`${isOpen && "bg-menu-gradient shadow"} md:(bg-none flex)`}
+            class={`${isOpen && "bg-menu-gradient shadow"} md:bg-none md:flex`}
           >
-            <div class="text-center py-2 md:(ml-8 mr-auto)">
+            <div class="text-center py-2 md:ml-8 md:mr-auto">
               <a href="#top">
                 <img class="inline" src="/logo-small.png" style={dropShadow} />
               </a>
@@ -71,11 +71,11 @@ const Header = () => {
             <div
               class={`${
                 !isOpen && "hidden"
-              } transition my-auto text-center md:(flex bg-menu-gradient rounded-full px-6 border(1 white) mx-8)`}
+              } transition my-auto text-center md:flex md:bg-menu-gradient md:rounded-full md:px-6 md:border-1 md:border-white md:mx-8`}
             >
               {nav.map((nav) => (
                 <li
-                  class="mx-auto list-none font-extrabold text-white pb-6 md:(px-5 py-3)"
+                  class="mx-auto list-none font-extrabold text-white pb-6 md:px-5 md:py-3"
                   style={{ textShadow: "3px 3px 2px #FF57E4" }}
                 >
                   <a href={nav.to} onClick={() => setOpen(false)}>

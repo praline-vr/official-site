@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      class="bg-gray-900 bg(bg_praline_sd no-repeat)"
+      class="bg-gray-900 bg-bg_praline_sd bg-no-repeat"
       style={{
         backgroundPosition: "bottom 18% right 18%",
         backgroundSize: "430px",
@@ -29,7 +29,7 @@ const Footer = () => {
               <img src="/icon-twitter-300x300.png" class="inline w-16" />
             </a>
           </div>
-          <p class="text(sm white) pb-8 pt-[22rem] md:pt-[8rem]">
+          <p class="text-sm text-white pb-8 pt-[22rem] md:pt-[8rem]">
             &copy; PRA-LiNÉ
           </p>
         </div>

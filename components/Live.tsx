@@ -113,18 +113,21 @@ const Live = () => {
     },
   ];
   return (
-    <div id="live" class="md:min-h-screen md:bg(cover center bg_blue)">
-      <div class="md:(mx-auto w-full md:max-w-6xl relative h-auto min-h-screen)">
-        <div class="text-center md:(absolute top-1/2 -translate-y-1/2 w-full)">
+    <div
+      id="live"
+      class="md:min-h-screen md:bg-cover md:bg-center md:bg-bg_blue"
+    >
+      <div class="md:mx-auto md:w-full md:md:max-w-6xl md:relative md:h-auto md:min-h-screen">
+        <div class="text-center md:absolute md:top-1/2 md:-translate-y-1/2 md:w-full">
           <h1
-            class="font-bold text-4xl vh-center aspect-video bg(cover center bg_blue)
-            md:(p-4 aspect-auto bg-none)"
+            class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-bg_blue
+            md:p-4 md:aspect-auto md:bg-none"
           >
             LIVE HISTORY
           </h1>
-          <ul class="px-4 py-6 text-left m-auto md:(pl-8 w-3/4 py-0 h-[50vh] overflow-auto)">
+          <ul class="px-4 py-6 text-left m-auto md:pl-8 md:w-3/4 md:py-0 md:h-[50vh] md:overflow-auto">
             {lives.reverse().map((live) => (
-              <li class="list-circle ml-4 py-2 md:(ml-0 py-0)">
+              <li class="list-circle ml-4 py-2 md:ml-0 md:py-0">
                 <span class="mr-1">{live.date}</span>
                 {live.href ? (
                   <a href={live.href} class="underline text-blue-400">

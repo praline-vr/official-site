@@ -40,41 +40,39 @@ const Profile = () => {
   ];
 
   return (
-    <div id="profile" class="md:bg(cover center bg_orange)">
-      <div class="md:(mx-auto w-full md:max-w-6xl relative h-screen)">
-        <div class="text-center md:(absolute top-1/2 -translate-y-1/2 w-full)">
-          <h1
-            class="font-bold text-4xl vh-center aspect-video bg(cover center bg_orange)
-            md:(p-2 aspect-auto h-auto bg-none)"
-          >
+    <div id="profile" class="md:bg-cover md:bg-center md:bg-bg_orange">
+      <div class="md:mx-auto md:w-full md:max-w-6xl md:relative md:h-screen">
+        <div class="text-center md:absolute md:top-1/2 md:-translate-y-1/2 md:w-full">
+          <h1 class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-bg_orange
+            md:p-2 md:aspect-auto md:h-auto md:bg-none">
             PROFILE
           </h1>
-          <div class="md:(flex text-left)">
+          <div class="md:flex md:text-left">
             {profiles.map((profile) => (
-              <div class="mx-8 my-3 md:(mx-12 w-full)">
-                <div class="flex mb-4 md:(block mb-0)">
+              <div class="mx-8 my-3 md:mx-12 md:w-full">
+                <div class="flex mb-4 md:block md:mb-0">
                   <img
                     src={profile.pic}
-                    class="w-1/2 rounded-[36px] ml-8 md:(w-full my-0 mx-auto)"
+                    class="w-1/2 rounded-[36px] ml-8 md:w-full md:my-0 md:mx-auto"
                   />
-                  <h2 class="w-1/2 font-bold vh-center text-2xl md:(mt-6 w-full text-base block)">
+                  <h2 class="w-1/2 font-bold vh-center text-2xl md:mt-6 md:w-full md:text-base md:block">
                     {profile.name}
                     <span class="hidden md:inline">.</span>
                   </h2>
                 </div>
                 <div class="flex md:block">
                   <p class="w-3/4 md:w-full">{profile.detail}</p>
-                  <div class="mx-auto md:(mt-4 w-auto)">
+                  <div class="mx-auto md:mt-4 md:w-auto">
                     <a href={profile.twitter}>
                       <img
                         src="/icon-twitter-300x300.png"
-                        class="w-12 mb-2 md:(mb-0 mr-3 inline w-8)"
+                        class="w-12 mb-2 md:mb-0 md:mr-3 md:inline md:w-8"
                       />
                     </a>
                     <a href={profile.youtube}>
                       <img
                         src="/icon-youtube-300x300.png"
-                        class="w-12 md:(inline w-8)"
+                        class="w-12 md:inline md:w-8"
                       />
                     </a>
                   </div>
