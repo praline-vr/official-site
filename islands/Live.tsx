@@ -1,4 +1,5 @@
 import { FunctionComponent } from "preact";
+import { useRef } from "preact/hooks";
 
 type Live = {
   name: string;
@@ -132,7 +133,10 @@ function getId(href?: string): string | null {
 const LinkIf: FunctionComponent<{ href?: string }> = ({ href, children }) => {
   if (href) {
     return (
-      <a href={href} class="underline text-blue-400">
+      <a
+        href={href}
+        class="underline text-blue-400 hover:opacity-80 transition-opacity"
+      >
         {children}
       </a>
     );
@@ -173,6 +177,15 @@ const FromLive: FunctionComponent<{ live: Live }> = ({ live }) => {
 };
 
 const Live = () => {
+  const scrollref = useRef<HTMLDivElement>(null);
+  const scroll = (amount: number) => {
+    if (!scrollref.current) return;
+    const left = scrollref.current.scrollLeft;
+    scrollref.current.scroll({
+      left: left + amount,
+      behavior: "smooth",
+    });
+  };
   return (
     <div
       id="live"
@@ -184,13 +197,28 @@ const Live = () => {
             md:p-4 md:aspect-auto md:bg-none">
             LIVE HISTORY
           </h1>
-          <div class="mt-8 flex overflow-x-auto md:mt-0">
+          <div
+            ref={scrollref}
+            class="mt-8 flex overflow-x-auto md:overflow-x-hidden md:mt-0"
+          >
             {lives.toReversed().map((live) => (
               <div class="flex-none">
                 <FromLive live={live} />
               </div>
             ))}
           </div>
+          <button
+            onClick={() => scroll(-512)}
+            class="hidden md:block md:absolute top-1/2 left-2 drop-shadow-md bg-white text-xl font-extrabold w-12 h-12 rounded-full opacity-90 hover:opacity-95"
+          >
+            ←
+          </button>
+          <button
+            onClick={() => scroll(512)}
+            class="hidden md:block md:absolute top-1/2 right-2 drop-shadow-md bg-white text-xl font-extrabold w-12 h-12 rounded-full opacity-90 hover:opacity-95"
+          >
+            →
+          </button>
         </div>
       </div>
     </div>

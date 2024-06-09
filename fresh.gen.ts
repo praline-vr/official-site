@@ -5,6 +5,7 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Header from "./islands/Header.tsx";
+import * as $Live from "./islands/Live.tsx";
 import * as $Loading from "./islands/Loading.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -15,6 +16,7 @@ const manifest = {
   },
   islands: {
     "./islands/Header.tsx": $Header,
+    "./islands/Live.tsx": $Live,
     "./islands/Loading.tsx": $Loading,
   },
   baseUrl: import.meta.url,
