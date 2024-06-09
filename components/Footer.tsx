@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      class="bg-gray-900 bg-bg_praline_sd bg-no-repeat"
+      class="bg-indigo-900 bg-bg_praline_sd bg-no-repeat"
       style={{
         backgroundPosition: "bottom 18% right 18%",
         backgroundSize: "430px",
@@ -22,11 +22,11 @@ const Footer = () => {
           <p class="text-white">
             PRA-LiNÉに関するお問い合わせは
             <br />
-            TwitterのDMまでお願い申し上げます。
+            X (旧Twitter) のDMまでお願い申し上げます。
           </p>
           <div class="mx-auto my-6">
-            <a href="https://twitter.com/praline_vr">
-              <img src="/icon-twitter-300x300.png" class="inline w-16" />
+            <a href="https://x.com/praline_vr">
+              <img src="/icon-x-300x300.png" class="inline w-16" />
             </a>
           </div>
           <p class="text-sm text-white pb-8 pt-[22rem] md:pt-[8rem]">

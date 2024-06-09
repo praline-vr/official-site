@@ -15,8 +15,8 @@ const Top = () => {
         </div>
         <div class="hidden md:block md:absolute md:bottom-[20%] md:left-[5%] md:bg-purple-700 md:bg-opacity-30 md:rounded-full md:px-1 md:py-8 md:border-1 md:border-white">
           <p class="text-white font-bold">official</p>
-          <a href="https://twitter.com/praline_vr">
-            <img src="icon-twitter-300x300.png" class="my-4 h-8 mx-auto" />
+          <a href="https://x.com/praline_vr">
+            <img src="icon-x-300x300.png" class="my-4 h-8 mx-auto" />
           </a>
           <a href="https://pra-line.booth.pm/">
             <img src="icon-booth-300x300.png" class="my-4 h-8 mx-auto" />

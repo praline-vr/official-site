@@ -9,7 +9,7 @@ const Profile = () => {
         "じつはギターを弾くのがあんまり得意じゃないらしく、",
         "隙あらばサボろうとしているらしい。がぶがぶがぶりあす。",
       ].join(""),
-      twitter: "https://twitter.com/lin_ll_vr",
+      x: "https://x.com/lin_ll_vr",
       youtube: "https://www.youtube.com/@lin_yozakura",
     },
     {
@@ -22,7 +22,7 @@ const Profile = () => {
         "ビジュアル・デザイン面でもみんなを引っ張っている。",
         "もちょもちょ。",
       ].join(""),
-      twitter: "https://twitter.com/MoMoChannel9",
+      x: "https://x.com/MoMoChannel9",
       youtube: " https://www.youtube.com/@MochoNoki",
     },
     {
@@ -34,7 +34,7 @@ const Profile = () => {
         "楽器を持つと目が覚めるらしい。",
         "たまにキーボードやギターも担当する。なかんにゃ。",
       ].join(""),
-      twitter: "https://twitter.com/naca_nyan",
+      x: "https://x.com/naca_nyan",
       youtube: "https://www.youtube.com/@naca_nyan",
     },
   ];
@@ -63,9 +63,9 @@ const Profile = () => {
                 <div class="flex md:block">
                   <p class="w-3/4 md:w-full">{profile.detail}</p>
                   <div class="mx-auto md:mt-4 md:w-auto">
-                    <a href={profile.twitter}>
+                    <a href={profile.x}>
                       <img
-                        src="/icon-twitter-300x300.png"
+                        src="/icon-x-300x300.png"
                         class="w-12 mb-2 md:mb-0 md:mr-3 md:inline md:w-8"
                       />
                     </a>
