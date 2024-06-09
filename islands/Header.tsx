@@ -48,7 +48,6 @@ const nav = [
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const toggle = () => setOpen(!isOpen);
-  const dropShadow = { filter: "drop-shadow(0 3px 3px #5555)" };
   return (
     <>
       <div class="mx-auto fixed w-full z-10">
@@ -58,7 +57,7 @@ const Header = () => {
           >
             <div class="text-center py-2 md:ml-8 md:mr-auto">
               <a href="#top">
-                <img class="inline" src="/logo-small.png" style={dropShadow} />
+                <img class="inline drop-shadow-md" src="/logo-small.png" />
               </a>
             </div>
             <div class="absolute right-8 top-8 md:hidden">
