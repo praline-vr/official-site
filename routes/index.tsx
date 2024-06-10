@@ -3,7 +3,7 @@ import Header from "../islands/Header.tsx";
 import Top from "../components/Top.tsx";
 import Profile from "../components/Profile.tsx";
 import Live from "../islands/Live.tsx";
-import Discography from "../components/Discography.tsx";
+import Discography from "../islands/Discography.tsx";
 import Goods from "../components/Goods.tsx";
 import Footer from "../components/Footer.tsx";
 import Loading from "../islands/Loading.tsx";

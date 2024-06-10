@@ -4,6 +4,7 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $Discography from "./islands/Discography.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $Live from "./islands/Live.tsx";
 import * as $Loading from "./islands/Loading.tsx";
@@ -15,6 +16,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/Discography.tsx": $Discography,
     "./islands/Header.tsx": $Header,
     "./islands/Live.tsx": $Live,
     "./islands/Loading.tsx": $Loading,
