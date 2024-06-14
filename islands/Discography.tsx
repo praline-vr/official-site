@@ -17,7 +17,8 @@ const items: Item[] = [
     date: "2022.6.18 Release",
     description: `
 VRアイドルスリーピースバンドPRA-LiNÉからの待望の初音源！！
-あまあま～💖でしゅがしゅが～🌟な歌詞とキュートでポップなおしゃれサウンドをご賞味あれ～～～！！！！`,
+あまあま～💖でしゅがしゅが～🌟な歌詞とキュートでポップな
+おしゃれサウンドをご賞味あれ～～～！！！！`,
   },
   {
     img: "/jacket-ddt.png",
@@ -25,7 +26,7 @@ VRアイドルスリーピースバンドPRA-LiNÉからの待望の初音源！
     title: "2nd single 『Dance Dance Together』",
     date: "2023.8.26 Release",
     description: `
-"主役はMe? -NO!NO!NO!-"
+  “主役は Me? -NO! NO! NO!-”  
 VRアイドルスリーピースバンドPRA-LiNÉ待望のNew Single!!!!
 じつはいちばん最初につくった曲なんだよ～！！
 ロックでポップでキュートなわたしたちの原点、たくさん聴いてね！`,
@@ -50,7 +51,11 @@ const Texts: FunctionComponent<{ index: number }> = ({ index }) => {
             {item.title}
           </p>
           <p class="px-8 my-4 md:my-10 md:font-bold">
-            {item.description}
+            {item.description.split("\n").map((line) => (
+              <p class="inline md:block">
+                {line}
+              </p>
+            ))}
           </p>
           <div class="text-center md:text-right md:px-8">
             <a href={item.href} class="hover:opacity-80 transition-opacity">
