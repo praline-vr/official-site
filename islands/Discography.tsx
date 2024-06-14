@@ -16,7 +16,7 @@ const items: Item[] = [
     title: "1st single 『わたしだけのSugar』",
     date: "2022.6.18 Release",
     description: `
-VRアイドルスリーピースバンドPRA-LiNĒからの待望の初音源！！
+VRアイドルスリーピースバンドPRA-LiNÉからの待望の初音源！！
 あまあま～💖でしゅがしゅが～🌟な歌詞とキュートでポップなおしゃれサウンドをご賞味あれ～～～！！！！`,
   },
   {
@@ -26,7 +26,7 @@ VRアイドルスリーピースバンドPRA-LiNĒからの待望の初音源！
     date: "2023.8.26 Release",
     description: `
 "主役はMe? -NO!NO!NO!-"
-VRアイドルスリーピースバンドPRA-LiNĒ待望のNew Single!!!!
+VRアイドルスリーピースバンドPRA-LiNÉ待望のNew Single!!!!
 じつはいちばん最初につくった曲なんだよ～！！
 ロックでポップでキュートなわたしたちの原点、たくさん聴いてね！`,
   },

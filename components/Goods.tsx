@@ -15,7 +15,7 @@ const Goods = () => {
                 <img src="/item-badge.png" class="w-1/3 p-8" />
               </div>
               <p class="mx-4 leading-10 md:my-10 md:font-bold">
-                オンラインショップ SUZURI にて PRA-LiNĒ の
+                オンラインショップ SUZURI にて PRA-LiNÉ の
                 グッズが買えるよ！！！！！
                 <br />
                 カップやクージー、スマホケースなんかもあるよ！
