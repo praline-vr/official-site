@@ -177,12 +177,13 @@ const FromLive: FunctionComponent<{ live: Live }> = ({ live }) => {
 };
 
 const Live = () => {
-  const scrollref = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const scroll = (amount: number) => {
-    if (!scrollref.current) return;
-    const left = scrollref.current.scrollLeft;
-    scrollref.current.scroll({
-      left: left + amount,
+    if (!scrollRef.current) return;
+    const left = scrollRef.current.scrollLeft;
+    const width = 512;
+    scrollRef.current.scroll({
+      left: left + width * amount,
       behavior: "smooth",
     });
   };
@@ -198,7 +199,7 @@ const Live = () => {
             LIVE HISTORY
           </h1>
           <div
-            ref={scrollref}
+            ref={scrollRef}
             class="mt-8 flex overflow-x-auto md:overflow-x-hidden md:mt-0"
           >
             {lives.toReversed().map((live) => (
@@ -208,13 +209,13 @@ const Live = () => {
             ))}
           </div>
           <button
-            onClick={() => scroll(-512)}
+            onClick={() => scroll(-2)}
             class="hidden md:block md:absolute top-1/2 left-2 drop-shadow-md bg-white text-xl font-extrabold w-12 h-12 rounded-full opacity-90 hover:opacity-95"
           >
             ←
           </button>
           <button
-            onClick={() => scroll(512)}
+            onClick={() => scroll(+2)}
             class="hidden md:block md:absolute top-1/2 right-2 drop-shadow-md bg-white text-xl font-extrabold w-12 h-12 rounded-full opacity-90 hover:opacity-95"
           >
             →
