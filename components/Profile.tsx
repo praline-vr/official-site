@@ -22,7 +22,7 @@ const Profile = () => {
         "ビジュアル・デザイン面でもみんなを引っ張っている。",
         "もちょもちょ。",
       ].join(""),
-      x: "https://x.com/MoMoChannel9",
+      x: "https://x.com/MoCho_MoChom",
       youtube: " https://www.youtube.com/@MochoNoki",
     },
     {
