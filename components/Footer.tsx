@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      class="bg-indigo-900 bg-bg_praline_sd bg-no-repeat"
+      class="bg-indigo-900 bg-[url('/praline-sd.png')] bg-no-repeat"
       style={{
         backgroundPosition: "bottom 18% right 18%",
         backgroundSize: "430px",

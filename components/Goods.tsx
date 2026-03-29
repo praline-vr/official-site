@@ -1,9 +1,12 @@
 const Goods = () => {
   return (
-    <div id="goods" class="md:bg-cover md:bg-center md:bg-bg_purple">
+    <div
+      id="goods"
+      class="md:bg-cover md:bg-center md:bg-[url('/bg-purple.png')]"
+    >
       <div class="md:mx-auto md:w-full md:max-w-6xl md:relative md:h-screen">
         <div class="text-center md:absolute md:top-1/2 md:-translate-y-1/2 md:w-full">
-          <h1 class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-bg_purple
+          <h1 class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-[url('/bg-purple.png')]
             md:p-8 md:aspect-auto md:h-auto md:bg-none">
             GOODS
           </h1>

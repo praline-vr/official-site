@@ -40,10 +40,13 @@ const Profile = () => {
   ];
 
   return (
-    <div id="profile" class="md:bg-cover md:bg-center md:bg-bg_orange">
+    <div
+      id="profile"
+      class="md:bg-cover md:bg-center md:bg-[url('/bg-orange.png')]"
+    >
       <div class="md:mx-auto md:w-full md:max-w-6xl md:relative md:h-screen">
         <div class="text-center md:absolute md:top-1/2 md:-translate-y-1/2 md:w-full">
-          <h1 class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-bg_orange
+          <h1 class="font-bold text-4xl vh-center aspect-video bg-cover bg-center bg-[url('/bg-orange.png')]
             md:p-2 md:aspect-auto md:h-auto md:bg-none">
             PROFILE
           </h1>

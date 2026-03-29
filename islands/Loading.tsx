@@ -1,4 +1,4 @@
-import { useState, useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { FunctionComponent } from "preact";
 
 const Loading: FunctionComponent = () => {

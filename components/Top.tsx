@@ -2,7 +2,10 @@ const Top = () => {
   return (
     // twind intellisense causes error next line for now
     // https://github.com/tw-in-js/vscode-twind-intellisense/issues/19
-    <div id="top" class="bg-cover bg-center bg-bg_top_rot md:bg-bg_top">
+    <div
+      id="top"
+      class="bg-cover bg-center bg-[url('/bg-top-rot.png')] md:bg-[url('/bg-top.png')]"
+    >
       <div class="mx-auto w-full md:max-w-6xl relative h-screen">
         <img
           src="/praline-trim.png"
