@@ -4,12 +4,13 @@ PRA-LiNE official web site
 
 ### Usage
 
-Require: [Deno](https://deno.land/)
+Make sure to install Deno:
+https://docs.deno.com/runtime/getting_started/installation
 
-Start the project:
+Then start the project in development mode:
 
 ```
-deno task start
+deno task dev
 ```
 
 This will watch the project directory and restart as necessary.
