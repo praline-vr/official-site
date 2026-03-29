@@ -16,7 +16,7 @@ const Top = () => {
           <img src="/logo.png" class="py-3 mx-auto w-1/2 md:w-[60%]" />
           <img src="/text-lower.png" class="mx-auto w-1/2 md:w-[60%]" />
         </div>
-        <div class="hidden md:block md:absolute md:bottom-[20%] md:left-[5%] md:bg-purple-700 md:bg-opacity-30 md:rounded-full md:px-1 md:py-8 md:border-1 md:border-white">
+        <div class="hidden md:block md:absolute md:bottom-[20%] md:left-[5%] md:bg-purple-700/30 md:rounded-full md:px-1 md:py-8 md:border-1 md:border-white">
           <p class="text-white font-bold">official</p>
           <a href="https://x.com/praline_vr">
             <img src="icon-x-300x300.png" class="my-4 h-8 mx-auto" />

@@ -43,11 +43,10 @@ html {
   }
 }
 
-@layer utilities {
-  .vh-center {
-    @apply flex justify-center items-center;
-  }
-  .bg-menu-gradient {
-    @apply bg-gradient-to-t from-[rgba(109,40,217,0.3)] to-[rgb(196,168,240)];
-  }
+@utility vh-center {
+  @apply flex justify-center items-center;
+}
+
+@utility bg-menu-gradient {
+  @apply bg-gradient-to-t from-[rgba(109,40,217,0.3)] to-[rgb(196,168,240)];
 }
