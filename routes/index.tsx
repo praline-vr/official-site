@@ -1,4 +1,4 @@
-import { Head } from "fresh/runtime";
+import { asset, Head } from "fresh/runtime";
 import Header from "../islands/Header.tsx";
 import Top from "../components/Top.tsx";
 import Profile from "../components/Profile.tsx";
@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/logo-small.png" />
+        <link rel="icon" href={asset("/logo-small.png")} />
         <meta name="description" content={description} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:title" content={title} />
