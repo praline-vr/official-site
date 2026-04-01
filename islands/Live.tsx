@@ -116,6 +116,36 @@ const lives: Live[] = [
     name: "そのらじｰAwaiSonoMidnightRadio- #217 (ラジオミニライブ)",
     href: "https://youtu.be/2EPOjUuqdl0",
   },
+  {
+    date: "2024.07.17",
+    name: "Live Event「Virtual Rendez-Vous」（音声のみ）",
+    href: "https://youtu.be/FktmEzUNjwE",
+  },
+  {
+    date: "2024.10.20",
+    name: "「Mepp-deep links」2024/10/20",
+    href: "https://youtu.be/EIA-IFtUTao",
+  },
+  {
+    date: "2024.12.08",
+    name: "合同ライブ「ふみんぷらふぁん」2024（音声のみ）",
+    href: "https://youtu.be/Mrxr9W9JRKQ",
+  },
+  {
+    date: "2025.07.25",
+    name: "「みるきぃSummer2025」",
+    href: "https://youtu.be/JlP4RARLO2U",
+  },
+  {
+    date: "2025.10.08",
+    name: "Virtual Rendez-Vous 2nd Anniversary SPECIAL LIVE（音声のみ）",
+    href: "https://youtu.be/wrxvSlj9VBE",
+  },
+  {
+    date: "2025.11.27",
+    name: "合同ライブ「ふみんぷらふぁん」2025（音声のみ）",
+    href: "https://youtu.be/apePDNZ_hc0",
+  },
 ];
 
 function getId(href?: string): string | null {
