@@ -50,13 +50,13 @@ const Texts: FunctionComponent<{ index: number }> = ({ index }) => {
           <p class="my-4 md:my-10 font-bold text-xl">
             {item.title}
           </p>
-          <p class="px-8 my-4 md:my-10 md:font-bold">
+          <div class="px-8 my-4 md:my-10 md:font-bold">
             {item.description.split("\n").map((line) => (
               <p class="inline md:block">
                 {line}
               </p>
             ))}
-          </p>
+          </div>
           <div class="text-center md:text-right md:px-8">
             <a href={item.href} class="hover:opacity-80 transition-opacity">
               <img src="/icon-booth-300x300.png" class="inline w-16" />
