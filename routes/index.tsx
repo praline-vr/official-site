@@ -8,9 +8,7 @@ import Goods from "../components/Goods.tsx";
 import Footer from "../components/Footer.tsx";
 import Loading from "../islands/Loading.tsx";
 
-const canonicalUrl =
-  (typeof Deno !== "undefined" ? Deno.env.get("CANONICAL_URL") : undefined) ??
-    "/";
+const canonicalUrl = "https://prali.net";
 const title = "PRA-LiNÉ Official";
 const description =
   "VRアイドルスリーピースバンド PRA-LiNÉ(ぷらりね) の公式サイトだよ！";
