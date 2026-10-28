@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "official-site",
+  "compatibility_date": "2026-10-28",
+  "main": "./_fresh/server.js",
+  "assets": {
+    "directory": "./_fresh/client"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
